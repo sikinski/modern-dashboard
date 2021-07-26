@@ -1,0 +1,195 @@
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 250px;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+.main-content_large {
+    left: 160px;
+}
+.main .topbar {
+    width: 100%;
+    padding: 0 10px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar-full {
+    width: calc(100% + 160px);
+    margin-left: -80px;
+}
+.topbar h2 {
+    cursor:default;
+}
+.toggle {
+    position: relative;
+    font-size: 30px;
+    opacity: 0.7;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+.search label {
+    position: relative;
+    width: 100%;
+}
+.search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    outline: none;
+    padding-left: 40px;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+
+}
+.search label .fas {
+    position: absolute;
+    left:15px;
+    top:1px;
+    opacity: 0.7;
+}
+.main-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.heading-updated, .updates-cards h2 {
+    margin-top: 15px;
+    text-align: center;
+}
+/*Boxes*/
+
+/*Card 1*/
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.cardBox .card {
+    position: relative;
+    height: 320px;
+    max-width:330px;
+    border-radius: 2em;
+    font-size: smaller;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+.cardBox .card:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: 0.9s;
+}
+
+.card-1-img {
+    width: 100%;
+    height: 85%;
+    background: url(img/img_uploades.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card-1, .card-2 {
+    padding: 18px;
+}
+.card-1 p {
+    font-size: 15px;
+    opacity: 0.8;
+    cursor: default;
+}
+.card-1 h2 {
+    cursor: default;
+}
+.plus {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: -16%;
+    margin-left: 80%;
+    background:#232575;
+    border-radius: 25% 25%;
+    border: none;
+    color:white;
+    box-shadow: rgba(35, 37, 117, 1) 0px 0px 8px;
+    cursor: pointer;
+}
+/*Card 2*/
+.card-2 {
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.actual-box {
+    width: 50%;
+    height: 50%;
+    border-radius: 2em;
+    background: #f6f8ff;
+}
+.box-1 {
+    font-size:large;
+    cursor: default;
+    padding:30px 0;
+}
+.box-1 p {
+    font: bold;
+}
+.card-2-tasks {
+    opacity: 0.8;
+}
+.box-1 a {
+    font-size: 14px;
+    text-decoration: none;
+    color:black
+}
+
+.box-3 {
+    background: url(img/card-2-box-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.box-2 img, .box-4 img {
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+    margin-top: 15px;
+}
+.box-2, .box-4 {
+    text-align: center;
+    cursor: default;
+    font-size: 13px;
+
+} 
+.box-4 {
+    background: #323484;
+    color: white;
+}
+.card-3 {
+    padding: 50px 40px;
+    background: url(img/card-3-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.card-3 p {
+    margin: 10px 0;
+    font-size: 15px;
+}
+.card-3 .degrees {
+    font-size: 45px;
+}

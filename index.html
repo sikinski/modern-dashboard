@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common_styles.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="updates-cards.css">
+
+    <link rel="stylesheet" href="adaptive.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <!--div.navigation-->
+
+        <div class="navigation">
+            <img class="logo" src="img/logo.png"></img>
+
+            <div class="profile">
+                <img src="img/img_profile.jpg" class="avatar"></img>
+            <div class="profile-info">
+                <a href="#">
+                <span class="name">Si Kinski<br></span>
+                <span class="profession">Web-developer</span>
+            </a>
+            </div>
+        </div>
+
+            <ul>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="far fa-envelope"></i></span>
+                    <span class="title">Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fas fa-folder-open"></i></span>
+                    <span class="title">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fas fa-tasks"></i></span>
+                    <span class="title">Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fas fa-users"></i></span>
+                    <span class="title">Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="far fa-credit-card"></i></span>
+                    <span class="title">Payments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="far fa-clock"></i></span>
+                    <span class="title">Upcoming</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fas fa-check"></i></span>
+                    <span class="title">Done</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--div.main-->
+
+        <div class="main">
+            <!--topbar-->
+            <div class="topbar">
+                <div class="toggle"><i class="fas fa-bars"></i></div>
+                <h2>Welcome back, Si!</h2>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Type here to search"><i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="topbar-buttons">
+                    <button class="main-btn"><i class="far fa-envelope"></i></button>
+                    <button class="main-btn"><i class="fas fa-cog"></i></button>
+                    <button class="main-btn"><i class="fas fa-sign-out-alt"></i></button>
+                </div>
+            </div>
+            <h2 class="heading-updated">Your dashboard is up to date</h2>
+        <!--div.cardBox-->
+        <div class="cardBox">
+        <div class="card card-1">
+                <div class="card-1-img"></div>
+                <div class="card-name">
+                <h2>Latest uploades</h2>
+                <p>987 total files</p>
+                </div>
+                <button class="plus"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="card card-2">
+            <div class="actual-box box-1">
+                <h3>Open projects</h3>
+                <p class="card-2-tasks">30 tasks remaining</p>
+                <a href="#" class="complete-tasks">Complete tasks</a>
+            </div>
+            <div class="actual-box box-2">
+                <img src="img/card-2-box-2.png" alt="">
+                <h3>Latest media</h3>
+                <p>23 media filed</p>
+            </div>
+            <div class="actual-box box-3"></div>
+            <div class="actual-box box-4">
+                <img src="img/card-2-box-4.png" alt="">
+                <h3>Urgent to do</h3>
+                <p>High priority tasks</p>
+            </div>
+        </div>
+        <div class="card card-3">
+            <h2>What is your<br>plan ?</h2>
+            <p>Looks like a shady day</p>
+            <p class="degrees">36°</p>
+        </div>
+    </div>
+
+        <!--div.updates-cards-->
+        <div class="updates-cards">
+            <h2>Latest updates</h2>
+        <div class="cardBox">
+            <div class="card-update card-4">
+                <div class="update-buttons">
+                    <button class="active">Brand addition</button>
+                    <button class="passive">Upcoming tasks</button>
+                </div>
+                <div class="brand-additions">
+                    <div class="box-brand starbucks">
+                        <div class="img-brand"></div>
+                        <h3>Starbucks</h3>
+                        <p class="name-business">F&B industry</p>
+                        <p class="profit income">+987.00</p>
+                    </div>
+                    <div class="box-brand instagram">
+                        <div class="img-brand"></div>
+                        <h3>Instagram</h3>
+                        <p class="name-business">Tech Business</p>
+                        <p class="profit loss">-655.00</p>
+                    </div>
+                    <div class="box-brand bunch">
+                        <div class="img-brand"></div>
+                        <h3>Bunch app</h3>
+                        <p class="name-business">IT Business</p>
+                        <p class="profit income">+390.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-update card-5">
+                <div class="border-percent">
+                <div class="percentage-completion">
+                    <div class="percent">
+                        <h1>76%</h1>
+                        <p>Task completion rate</p></div>
+                </div>
+            </div>
+        </div>
+            <div class="card-update card-6">
+                <div class="card-6-saved">
+                <p>Great Job, You Saved</p>
+                <h1>$ 5,000</h1>
+                <p>Points Earned: 10,000</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/3dea964375.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

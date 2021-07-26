@@ -1,0 +1,115 @@
+/* 1300px 2 columns of cards*/
+
+@media only screen and (max-width: 1300px) {
+    .cardBox {
+        grid-template-columns: repeat(2, 3fr);
+    }
+    .heading-updated, .updates-cards h2 {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .plus {
+        margin-top: -30px;
+    }
+    
+}
+/* 1100px 1 column*/
+@media only screen and (max-width: 1100px) {
+    .topbar h2 {
+        display: none;
+    }
+    .topbar-buttons {
+        width: 300px;
+    }
+    .cardBox {
+        grid-template-columns: repeat(1, 3fr);
+    }
+    .topbar h2 {
+        margin-left: 10px;
+    }
+    .toggle {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .search {
+        width: 30px;
+    }
+    .search label {
+        width: 30px;
+        cursor: pointer;
+    }
+    .search label input {
+        width: 30px;
+        padding: 5px 20px;
+        border: none;
+    }
+}
+/* 1210px */
+@media only screen and (max-width: 1210px) {
+    .search {
+        width: 300px;
+    }
+}
+/* 840px */
+@media only screen and (max-width: 840px) {
+    .topbar h2 {
+        display:none;
+    }
+}
+/* 700px */
+@media only screen and (max-width: 700px) {
+    .navigation {
+        width: 60px;
+    }
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+    .main {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+    .topbar {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card {
+        max-width: 200px;
+        max-height: 300px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .card {
+        max-height: 240px;
+    }
+    .card-1-img {
+        margin-left: 10%;
+    }
+    .complete-tasks, .card-2-tasks, .box-2 p, .box-4 p {
+        display: none;
+    }
+    .search {
+        width: 120px;
+        margin-left: 20px;
+    }
+    .plus {
+        width:30px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .card {
+        max-width: 190px;
+        max-height: 210px;
+    }
+    .complete-tasks, .card-2-tasks, .box-2 p, .box-4 p {
+        display: none;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .topbar {
+        justify-content: center;
+    }
+}

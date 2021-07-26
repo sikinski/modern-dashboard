@@ -1,0 +1,107 @@
+/*container*/
+.navigation {
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    background: #323484;
+    color: white;
+    transition: 0.5s;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+.hide-navigation {
+    width: 60px;
+}
+.full-navigation {
+    height: 100%;
+    width: 500px;
+}
+.navigation .logo {
+    display: block;
+    width: 50%;
+    margin: 25px auto;
+}
+
+/*block profile*/
+.profile {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+.avatar {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.small-avatar {
+    width: 30px;
+    height: 30px;
+}
+.profile-info {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 75px;
+}
+.profession {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
+.profile a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 25px;
+}
+
+/* Lists */
+.navigation ul {
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover {
+    background: #232575;
+    transition: 0.5s;
+}
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color:white;
+}
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}

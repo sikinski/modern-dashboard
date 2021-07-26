@@ -1,0 +1,187 @@
+/*Card 4*/
+
+.card-update {
+    position: relative;
+    height: 320px;
+    max-width:350px;
+
+    border-radius: 2em;
+    font-size: smaller;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+.card-update:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: 0.9s;
+}
+.update-buttons {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 40px;
+}
+.update-buttons button {
+    width: 120px;
+    border-radius: 2em;
+    border: 0.7px solid #323484;
+    color: #323484;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.update-buttons .active:hover {
+    background: #323484;
+    color: white;
+    transition: 0.5s;
+}
+.update-buttons .passive:hover {
+    background: #323484;
+    color: white;
+    border: 0.7px solid #323484;
+    opacity: 1;
+    transition: 0.5s;
+}
+.update-buttons button:focus {
+    outline: none;
+    border:0.7px solid #323484;
+}
+.update-buttons .passive {
+    border: none;
+    opacity: 0.6;
+}
+.brand-additions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+.box-brand {
+    display: inline-flex;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 14px;
+}
+.box-brand:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.img-brand {
+    height: 55px;
+    width: 55px;
+    border-radius: 1em;;
+}
+.starbucks .img-brand {
+    background: url(img/starbucks_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.instagram .img-brand {
+    background: url(img/instagram_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bunch .img-brand {
+    background: url(img/bunch_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.box-brand h3 {
+    margin-left: 10px;
+    margin-top: 5px
+}
+.box-brand .name-business {
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 28px;
+}
+.box-brand .profit {
+    font-size: 15px;
+    font-weight: 800;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 20px;
+}
+.box-brand .income {
+    color: green;
+}
+.box-brand .loss {
+    color: rgb(150, 13, 13);
+}
+/*Card 5*/
+
+.border-percent {
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(to top, #308020 76%, #FFFFFF);
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.percentage-completion {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    padding: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: 7.5%;
+    margin-left: 7.5%;
+    cursor: pointer;
+}
+.percentage-completion:focus {
+    transition: 3s;
+    background: none;
+}
+.percent {
+    font-size: 15px;
+    text-align: center;
+    transform: translate(0, 5.5em)
+}
+.percent h1{
+    font-size: 40px;
+}
+/*Card 6*/
+
+.card-6 {
+    text-align: center;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.card-6-saved {
+    font-size: 15px;
+    transform: translate(0, 7em);
+}
+.card-6-saved h1{
+    font-size: 40px;
+    margin: 15px 0;
+}
+.card-6:hover::after{
+    animation-play-state: running;
+}
+
+.card-6::after{
+    content:'';
+    margin: 35px 35px;
+    z-index: -1;
+    top: -.225em;
+    position: absolute;
+    left: -.225em;
+    width: calc(80% + .45em);
+    height: calc(80% + .45em);
+    background-image: linear-gradient(45deg,#fc89cc, #f789d2, #de8de6, #be7aee, #a46dfc);
+    background-size: 200%;
+    animation: animateborder 3s ease infinite;
+    border-radius: 2em;
+}
+@keyframes animateborder {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
